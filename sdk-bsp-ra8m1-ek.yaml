@@ -18,7 +18,7 @@ board:
 chip:
   chip_name: R7FA8M1AH
   clock_source: HSE
-  device_vendor: ARM
+  device_vendor: RENESAS
   family_name: RA
   rx_name: PA10
   series_name: RA8
@@ -27,14 +27,27 @@ chip:
   target_freq: '240000000'
   tx_name: PA9
   uart_name: UART1
-docs: []
+docs: 
+- category: sheet
+  file: documents/ra8m1-group-datasheet.pdf
+  title: ra8m1-datasheet
+- category: manual
+  file: documents/ek-ra8m1_user_manual.pdf
+  title: ek-ra8m1_user_manual
 example_projects: []
 features:
-- 480 MHz Arm® Cortex®-M85
-- 'Helium and TrustZone® '
+- 480 MHz Arm Cortex-M85
+- 2MB Code Flash，1MB SRAM
+- 'Helium and TrustZone '
+- CAN FD PHY
 features_zh:
-- 480 MHz Arm® Cortex®-M85
-- '搭载 Helium 和 TrustZone® '
+- 480 MHz Arm Cortex-M85
+- 2MB 代码闪存，1MB SRAM
+- '搭载 Helium 和 TrustZone '
+- 以太网
+- USB高速主机和设备
+- 64MB 外部 Octo-SPI 闪存
+- CAN FD PHY
 pkg_type: Board_Support_Packages
 pkg_vendor: RT-Thread
 pkg_version: 0.0.2
